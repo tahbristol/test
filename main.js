@@ -8,7 +8,10 @@ const timestamp = document.getElementById('timestamp');
 
 function toggleVideoStatus() {
   if(video.paused) {
-    video.play();
+    video.play()
+    .then(res => {
+      debugger
+    })
   } else {
     video.pause();
   }
